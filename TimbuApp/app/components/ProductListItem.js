@@ -12,7 +12,7 @@ const ProductListItem = ({ product }) => {
       <View style={styles.info}>
         <Text style={styles.name}>{product.name}</Text>
         <Text style={styles.description}>{product.description}</Text>
-        {product.selling_price && <Text style={styles.price}>Price: ${product.selling_price}</Text>}
+        {product.current_price[0].NGN && <Text style={styles.price}>Price: ${product.current_price[0].NGN}</Text>}
       </View>
     </View>
   );

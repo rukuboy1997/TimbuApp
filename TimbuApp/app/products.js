@@ -12,7 +12,7 @@ export default function ProductsScreen() {
     const fetchProducts = async () => {
       try {
         const productsData = await getProducts();
-        setProducts(productsData);
+          setProducts(productsData);
       } catch (error) {
         setError('Failed to load products');
         Alert.alert('Error', 'Failed to load products. Please try again later.');
